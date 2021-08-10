@@ -100,21 +100,27 @@ function App() {
 
               <Header onCartClick={() => setCart(true)}/>
 
-              <Home
-                  cartItem={cartItem}
-                  searchValue={searchValue}
-                  setSearchValue={setSearchValue}
-                  onChangeInput={onChangeInput}
-                  items={items}
-                  onAddToCart={onAddToCart}
-                  onAddFavorites={onAddFavorites}
-                  isLoading={isLoading}
+              <Route exact path={process.env.PUBLIC_URL + "/"}>
+                  <Home
+                      cartItem={cartItem}
+                      searchValue={searchValue}
+                      setSearchValue={setSearchValue}
+                      onChangeInput={onChangeInput}
+                      items={items}
+                      onAddToCart={onAddToCart}
+                      onAddFavorites={onAddFavorites}
+                      isLoading={isLoading}
 
-              />
+                  />
+              </Route>
 
-              <Favorites />
+              <Route exact path={process.env.PUBLIC_URL + "favorites"}>
+                <Favorites />
+              </Route>
 
-              <Orders />
+              <Route exact path={process.env.PUBLIC_URL + "orders"}>
+                <Orders />
+              </Route>
 
 
           </div>

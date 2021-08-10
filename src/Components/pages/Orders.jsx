@@ -22,7 +22,7 @@ const Orders = () => {
 
 
     return (
-        <Route exact path="/orders">
+
             <div className="content p-40">
                 <div className="d-flex justify-between mb-40 align-center">
                     <h1>Мои заказы</h1>
@@ -43,7 +43,6 @@ const Orders = () => {
 
                 </div>
             </div>
-        </Route>
     )
 }
 

@@ -36,13 +36,13 @@ function Home({
 
 
     return (
-        <Route exact path="/">
+
             <div className="content p-40">
                 <div className="d-flex justify-between mb-40 align-center">
                     <h1 className="">{searchValue ? `Поиск по запросу: "${searchValue}"` : 'Все кроссовки'}</h1>
                     <div className="search-block d-flex input">
-                        <img src="/img/search.svg" alt="search"/>
-                        {searchValue ? <img onClick={() => setSearchValue('')} className="removeBtn removeInput" src="/img/btn-remove.svg" alt="remove"/> : null}
+                        <img src="img/search.svg" alt="search"/>
+                        {searchValue ? <img onClick={() => setSearchValue('')} className="removeBtn removeInput" src="img/btn-remove.svg" alt="remove"/> : null}
                         <input onChange={onChangeInput} value={searchValue} type="text" placeholder="Поиск..."/>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ function Home({
                 </div>
 
             </div>
-        </Route>
+
     )
 }
 

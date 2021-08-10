@@ -10,7 +10,7 @@ function Favorites() {
 
 
     return (
-        <Route exact path="/favorites">
+
             <div className="content p-40">
                 <div className="d-flex justify-between mb-40 align-center">
                     <h1>Мои закладки</h1>
@@ -32,7 +32,7 @@ function Favorites() {
 
                 </div>
             </div>
-        </Route>
+
     )
 }
 
